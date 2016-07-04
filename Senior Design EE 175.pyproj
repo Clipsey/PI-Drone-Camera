@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63e66f68-ef95-4c0c-b1c2-2f8df537be11}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Drone_PWM.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Drone_PWM.py" />
+    <Compile Include="Remote PWM.py" />
+    <Compile Include="The Latest Files\Combined_Server.py" />
+    <Compile Include="The Latest Files\Controller_Debug.py" />
+    <Compile Include="The Latest Files\Server_Controller_Module.py" />
+    <Compile Include="The Latest Files\Server_Webcam_Module.py" />
+    <Compile Include="Working-Demo-Stuff\Combined_Server.py" />
+    <Compile Include="Working-Demo-Stuff\Drone_Controller_Module.py" />
+    <Compile Include="Working-Demo-Stuff\Drone_Webcam_Module.py" />
+    <Compile Include="Working-Demo-Stuff\Server_Controller_Module.py" />
+    <Compile Include="Working-Demo-Stuff\Server_Webcam_Module.py" />
+    <Compile Include="Working-Demo-Stuff\Test_Bench.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pictures\DSC_0025.JPG" />
+    <Content Include="Pictures\DSC_0026.JPG" />
+    <Content Include="Pictures\DSC_0027.JPG" />
+    <Content Include="Pictures\DSC_0028.JPG" />
+    <Content Include="Pictures\DSC_0029.JPG" />
+    <Content Include="Pictures\DSC_0030.JPG" />
+    <Content Include="Pictures\DSC_0031.JPG" />
+    <Content Include="Pictures\DSC_0032.JPG" />
+    <Content Include="Pictures\DSC_0033.JPG" />
+    <Content Include="Pictures\DSC_0034.JPG" />
+    <Content Include="Pictures\DSC_0035.JPG" />
+    <Content Include="Schematics and Diagrams\arduino uno.PNG" />
+    <Content Include="Schematics and Diagrams\flowchart.jpg" />
+    <Content Include="Schematics and Diagrams\raspberry pi.PNG" />
+    <Content Include="Schematics and Diagrams\schematics.jpg" />
+    <Content Include="Sensors\Infrared Sensors\HC_SR4_Demo_Arduino\HC_SR4_Demo_Arduino\keywords.txt" />
+    <Content Include="Sensors\UltraSonic\HC_SR4_Demo_Arduino\HC_SR4_Demo_Arduino\keywords.txt" />
+    <Content Include="The Latest Files\Arduino Projects\libraries\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pictures" />
+    <Folder Include="Schematics and Diagrams" />
+    <Folder Include="Sensors\" />
+    <Folder Include="Sensors\Infrared Sensors\" />
+    <Folder Include="Sensors\Infrared Sensors\HC_SR4_Demo_Arduino\" />
+    <Folder Include="Sensors\Infrared Sensors\HC_SR4_Demo_Arduino\HC_SR4_Demo_Arduino" />
+    <Folder Include="Sensors\UltraSonic\" />
+    <Folder Include="Sensors\UltraSonic\HC_SR4_Demo_Arduino\" />
+    <Folder Include="Sensors\UltraSonic\HC_SR4_Demo_Arduino\HC_SR4_Demo_Arduino" />
+    <Folder Include="The Latest Files" />
+    <Folder Include="The Latest Files\Arduino Projects\" />
+    <Folder Include="The Latest Files\Arduino Projects\libraries" />
+    <Folder Include="Working-Demo-Stuff" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
